@@ -10,7 +10,6 @@ from nltk.stem.porter import PorterStemmer
 # Download NLTK data (only first time)
 nltk.download('punkt')
 nltk.download('stopwords')
-
 ps = PorterStemmer()
 
 # ----------------------
@@ -121,8 +120,8 @@ from sklearn.naive_bayes import MultinomialNB
 # NLTK setup
 # ----------------------
 # Download required NLTK data if not already present
-nltk.download('punkt', quiet=True)
-nltk.download('stopwords', quiet=True)
+nltk.download('punkt')
+nltk.download('stopwords')
 
 ps = PorterStemmer()
 stop_words = set(stopwords.words('english'))  # load once
@@ -215,4 +214,5 @@ elif choice == "About":
     - Automatically trains the model if not found.
     - Preprocessing includes lowercase conversion, stopword removal, and stemming.
     """)
+
 
